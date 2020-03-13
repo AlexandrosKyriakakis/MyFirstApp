@@ -1,0 +1,37 @@
+$ git config --global user.email "youremail@gmail.com" 
+
+$ git config --global user.name "yourusernamen"
+
+$ git init // Initialize a new repository at the root of the existing folder
+
+$ git clone "url" // Download a repo from git
+
+$ touch "example.txt" // Creates-Saves an empty file
+
+$ git status // to se the changes in the folder
+
+$ git add "name_of_the_file.txt" // to add file to the stagging enviroment
+
+$ git commit -m "Message" // upload changes
+
+$ git checkout -b "NameOfTheBrach" //Creates a new branch an log you in it
+
+$ git checkout "origin_name" // to go  branch given name
+
+$ git branch // shows all the branches
+
+$ git branch "branch_name" // creates a branch with given name
+
+$ git remote add origin https://github.com/.... // and you sync them
+
+$ git push -u origin master // pushes everything (-u) to the cloud
+
+$ git pull origin master // pulls everithing from the cloud
+
+$ git log // to check all the changes on the origins
+
+$ git fetch // Downloads all history from all branches
+
+$ git merge // combines everything fetched
+
+$ git pull //Combintion of fetch and merge
