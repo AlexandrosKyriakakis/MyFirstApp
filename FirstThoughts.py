@@ -60,7 +60,7 @@ for i in range(6):
     for j in range(6):
         SmartPosition[i][j] = sorted(SmartPosition[i][j])
 
-print (sorted(['U','L','D','R']))
+
 RandomStart1 = rd.choice(range(36))
 RandomStart2 = rd.choice([x for x in range(36) if (x != RandomStart1)])
 SmartShow[RandomStart1//6][RandomStart1%6] = SmartArray[RandomStart1//6][RandomStart1%6]
@@ -100,14 +100,16 @@ def opencell (i,j):
             fixArray(i-1,j)
             SmartShow[i-1][j] = SmartArray[i-1][j]
 #opencell(RandomStart1//6,RandomStart1%6)
-print (SUM)
+print ("Try to make the graph Connected with the least Sum points by oppening cells with given number (not zeros)!!!\nGood Luck!!!\n")
+print ("Summation = ",SUM)
 print (SmartShow)
 Connection = ""
 while (Connection != "Stop"):
-    i = input("Input X position of the cell.\n")
-    j = input("Input Y position of the cell.\n")
+    
+    i = input(">>Input X position of the cell you want to open.\n")
+    j = input(">>Input Y position of the cell you want to open.\n")
     opencell(int(i),int(j))
-    print (SUM)
+    print ("\nSummation = ",SUM)
     print (SmartShow)
-    Connection = input('Press "Play" or "Stop"\n')
+    Connection = input('Press "Enter" or "Stop"\n')
 
