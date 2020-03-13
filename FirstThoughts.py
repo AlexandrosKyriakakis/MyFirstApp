@@ -109,5 +109,5 @@ while (Connection != "Stop"):
     opencell(int(i),int(j))
     print (SUM)
     print (SmartShow)
-    Connection = input('Press "Play" or "Stop"\n')
+    Connection = input('Press "Enter" to continue or "Stop" to stop\n')
 
